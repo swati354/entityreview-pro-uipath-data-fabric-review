@@ -2,20 +2,18 @@
   "inputs": {
     "type": "object",
     "properties": {
-      "exampleInput": {
+      "entityName": {
         "type": "string",
-        "required": true,
-        "description": "Example input field from automation"
+        "required": true
       }
     }
   },
   "outputs": {
     "type": "object",
     "properties": {
-      "exampleOutput": {
+      "comments": {
         "type": "string",
-        "required": true,
-        "description": "Example output field user must provide"
+        "required": true
       }
     }
   },
@@ -27,12 +25,10 @@
     "type": "object",
     "properties": {
       "Approve": {
-        "type": "string",
-        "description": "Approve the request"
+        "type": "string"
       },
       "Reject": {
-        "type": "string",
-        "description": "Reject the request"
+        "type": "string"
       }
     }
   }
