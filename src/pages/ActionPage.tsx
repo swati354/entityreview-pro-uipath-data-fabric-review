@@ -8,7 +8,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Database, AlertCircle, CheckCircle, XCircle, Beaker } from 'lucide-react';
-import { VBDataType } from '@/types/action-schema';
 /**
  * Initial data for the form (shown before Action Center sends data)
  */
@@ -17,7 +16,7 @@ const INITIAL_DATA = {
 };
 /**
  * EntityReview Pro Action App
- * 
+ *
  * Allows reviewers to examine entity data from UiPath Data Fabric,
  * provide comments, and make approval/rejection decisions.
  */
@@ -74,8 +73,8 @@ export function ActionPage() {
           <TableRow key={record.id || index} className="hover:bg-gray-50 border-gray-200">
             {headers.map((header) => (
               <TableCell key={header} className="px-3 py-2 text-sm text-gray-900 border-r border-gray-200 last:border-r-0">
-                {record[header] !== null && record[header] !== undefined 
-                  ? String(record[header]) 
+                {record[header] !== null && record[header] !== undefined
+                  ? String(record[header])
                   : '-'
                 }
               </TableCell>
@@ -186,7 +185,7 @@ export function ActionPage() {
               <ActionFormField
                 name="comments"
                 label="Reviewer Comments"
-                type={VBDataType.String}
+                type="string"
                 required={true}
                 readOnly={isReadOnly}
                 value={formData.comments}
