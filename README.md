@@ -2,7 +2,7 @@
 
 A professional UiPath Action App for human reviewers to examine, validate, and make decisions on entity data from UiPath Data Fabric.
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/swati354/entityreview-pro-uipath-data-fabric-review)
 
 ## Overview
 
@@ -167,7 +167,7 @@ bun run preview
 
 ### Cloudflare Pages
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/swati354/entityreview-pro-uipath-data-fabric-review)
 
 1. **Automatic Deployment**: Use the deploy button above for one-click deployment to Cloudflare Pages
 
